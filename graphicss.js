@@ -34,6 +34,7 @@ function animate() {
   x += 1;
   if (x > canvas.width) {
     x = -width;
+    y += Math.sin(x * 0.05);
   }
   drawRect();
   requestAnimationFrame(animate);
